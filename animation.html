@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .v{color: darkblue;text-decoration: none;padding: 10px;background-color: antiquewhite;
+        height:fit-content;
+        width:fit-content;
+        animation-name: anna;
+        animation-duration: 10s;
+        animation-delay: 2s;
+      /*  animation-timing-function:ease-in;
+        animation-iteration-count: infinite;
+        animation-fill-mode: backwards;*/
+
+        }
+        @keyframes anna{
+           /* from{background-color: coral;}
+            to{ background-color: rgba(50, 10,10, 20)*/
+            0%{background-color:aquamarine;color: black;font-size: 1mm }
+             20%{background-color:rgb(4, 80, 23);color: rgb(92, 0, 0);font-size: 1cm }
+             40%{background-color:rgb(4, 7, 80);color: rgb(245, 219, 23);font-size: 1in }
+             60%{background-color:rgb(236, 218, 118);color: rgb(71, 0, 92);font-size: 2in }
+             80%{ background-color: #1d1d1d;margin: 0; padding: 0;display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      max-width: 75%;
+      font-size: 100px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: #540032;
+      background-image: url(https://cdn.pixabay.com/photo/2017/07/03/20/17/abstract-2468874_960_720.jpg);
+      background-attachment: fixed;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+             
+             };</style>
+</head>
+<body>
+    <div class="v"style="margin-top: 300px;margin-left: 300px;"><font>feeling sleepy,tired</font></div>
+    <script>
+        var text = document.getElementById("text");
+        var position = 0;
+        setInterval(function() {
+          position -= 1;
+          text.style.backgroundPosition = `${position}px 0`;
+        }, 50);
+      </script>
+</body>
+</html>

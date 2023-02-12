@@ -1,0 +1,339 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/42d8941734.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        
+
+        /*this block is used to control background image rotation and text-size   */
+        h1 {
+            max-width: 75%;
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            color: #540032;
+            background-image: url(https://cdn.pixabay.com/photo/2017/07/03/20/17/abstract-2468874_960_720.jpg);
+            /* background-attachment: fixed; */
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-repeat: repeat-x;
+            background-position: 0% 0%;
+            animation: moveBg 7s linear infinite;
+            /* font-size: 10px; */
+        }
+
+        /* background-image: url(https://cdn.pixabay.com/photo/2017/07/03/20/17/abstract-2468874_960_720.jpg); */
+        /* -webkit-text-fill-color: transparent; */
+        /* -webkit-background-clip: text;  */
+
+
+        @keyframes moveBg {
+            from {
+                background-position: 0% 0%;
+            }
+
+            to {
+                background-position: 100% 0%;
+            }
+        }
+
+        #sangu:after {
+            content: "";
+            animation: sangu 5s linear 3 forwards;
+        }
+
+        @keyframes sangu {
+            0% {
+                font-size: 14px;
+            }
+
+            15% {
+                content: "Start";
+                font-size: 35px;
+            }
+
+            30% {
+                content: "Your";
+                font-size: 55px;
+            }
+
+            40% {
+                content: "Journey";
+                font-size: 65px;
+            }
+
+            50% {
+                content: "With";
+                font-size: 75px;
+            }
+
+            60% {
+                content: "Us";
+                font-size: 85px;
+            }
+
+            100% {
+                content: "Welcome to Qspider Deccan";
+                font-size: 95px;
+            }
+        }
+
+        li.selected a {
+            color: #FF0000;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            background-color: #e0e0e0;
+            height: 50px;
+            width: 1233px;
+            float: left;
+            position: relative;
+            margin-top: 0%;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav li {
+            flex: content;
+            text-align: center;
+        }
+
+        nav a {
+            /* display: flex;*/
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: whitesmoke;
+            color: #ebb503;
+        }
+
+        /* * {
+            box-sizing: border-box;
+        } */
+
+        .container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .container img {
+            vertical-align: middle;
+        }
+
+        .container .content {
+            margin-top: 40px;
+            position: absolute;
+            float: right;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            /* Fallback color */
+            background: rgba(0, 0, 0, 0.3);
+            /* Black background with 0.5 opacity */
+            color: #f1f1f1;
+            width: 50%;
+            padding: 22px;
+            font-family: Arial;
+            font-size: 25px;
+        }
+
+        .f {
+            text-decoration: underline;
+            font-weight: 900;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(201, 201, 196);">
+    <img class="s" src="img/qsplogo.png" alt="" style="float: left;" height="50px" width="100px">
+    </img>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa fa-home fa-fw" aria-hidden="true"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-book"></i>
+                    Courses
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-calendar"></i>
+                    Batches
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cubes"></i>
+                    Corporate
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-map-marker"></i>
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-users"></i>
+                    Placement
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-edit"></i>
+                    Enquiry
+                </a>
+            </li>
+            <li>
+                <a href="#" style="align-self:flex-end;">
+                    <i class="fa-solid fa-circle-user" style="font-size: 27px; margin-left: 230px;"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div style="background-color: #ffffff; margin-top: 50px;position: relative;height: 300px;       width:    1350px;"
+        class="wrapper">
+        <h1 id="sangu" style="font-size: 100px;"></h1>
+    </div>
+    <div class="container">
+        <img src="img/div1.jpg" style="width:100%;">
+        <div class="content">
+            <font class="f" style="font-size: 30px; color: goldenrod;">LARGEST SOFTWARE TRAINING ORGANISATION</font>
+            <p>QSpiders is the world's ace software training
+                organization with an aim to bridge the gap between the demands
+                of the industry and the curriculum of educational institutions.
+            </p>
+            <p> With centers across the Globe, the institute is a platform where
+                young minds are given the opportunity to build successful
+                careers.
+            </p>
+            ”QSpiders is a place where businesses find talent and dreams
+            take flight."
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!--<html>
+  <head>
+    <style>
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgray;
+        height: 50px;
+      }
+      
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      nav li {
+        flex: 1;
+        text-align: center;
+      }
+      
+      nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      
+      nav a:hover {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-book"></i>
+            Courses
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-calendar"></i>
+            Batches
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-building"></i>
+            Corporate
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-phone"></i>
+            Contact
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-briefcase"></i>
+            Placement
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-question-circle"></i>
+            Enquiry
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>-->
